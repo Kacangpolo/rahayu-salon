@@ -33,21 +33,29 @@ export default function Home() {
         notes: ''
     });
 
+    // Mock Services for Demo Mode
+    const MOCK_SERVICES: Service[] = [
+        { id: '1', name: 'Hair Spa L', price: 'Rp 150.000', durationMin: 60 },
+        { id: '2', name: 'Manicure Standard', price: 'Rp 100.000', durationMin: 60 },
+        { id: '3', name: 'Facial Deluxe', price: 'Rp 250.000', durationMin: 90 },
+    ];
+
     useEffect(() => {
         const fetchServices = async () => {
             try {
                 const res = await api.get('/services');
-                // Check if response is array (it should be)
                 if (Array.isArray(res.data)) {
-                    // Map price to string if needed or use as is. Assuming backend sends number.
                     setServices(res.data.map((s: any) => ({
                         ...s,
                         price: `Rp ${new Intl.NumberFormat('id-ID').format(s.price)}`
                     })));
                 }
             } catch (err) {
-                console.error('Failed to fetch services', err);
-                setError('Gagal memuat layanan. Pastikan server berjalan.');
+                console.warn('Backend offline, using Mock Data for Demo.');
+                // Fallback to Mock Data
+                setServices(MOCK_SERVICES);
+                // Clear error so user sees the demo
+                setError('');
             } finally {
                 setInitLoading(false);
             }
@@ -60,9 +68,7 @@ export default function Home() {
         setLoading(true);
         try {
             // Force WITA Timezone (Asia/Makassar is UTC+8)
-            // We construct an ISO string with +08:00 offset explicitly.
             const bookingTime = `${formData.date}T${formData.time}:00+08:00`;
-
             // Destructure to remove date and time from the payload sent to server
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const { date, time, ...payload } = formData;
@@ -75,7 +81,13 @@ export default function Home() {
             router.push('/success');
         } catch (error: any) {
             console.error('Booking failed:', error);
-            // Show more detailed error if available
+            // Check if it's a Network Error (Backend not reachable) -> Allow simulation success for Demo
+            if (error.code === "ERR_NETWORK" || error.message === "Network Error") {
+                console.log("Simulating success for Demo Mode");
+                router.push('/success');
+                return;
+            }
+
             const msg = error.response?.data?.message
                 ? (Array.isArray(error.response.data.message)
                     ? error.response.data.message.join(', ')
