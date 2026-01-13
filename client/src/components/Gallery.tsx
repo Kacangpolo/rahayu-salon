@@ -6,7 +6,7 @@ export default function Gallery() {
             title: "Nail Art & Manicure"
         },
         {
-            src: "https://images.unsplash.com/photo-1588667500550-c8f3ad67946c?auto=format&fit=crop&q=80&w=600&h=800",
+            src: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=600&h=800",
             title: "Eyelash Extensions"
         },
         {
