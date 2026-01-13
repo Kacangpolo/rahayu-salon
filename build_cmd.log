@@ -1,0 +1,156 @@
+ Image rahayusalon-api Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 638B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 805B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:18
+#3 DONE 1.7s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/8] FROM docker.io/library/node:18@sha256:c6ae79e38498325db67193d391e6ec1d224d96c693a8a4d943498556716d3783
+#5 resolve docker.io/library/node:18@sha256:c6ae79e38498325db67193d391e6ec1d224d96c693a8a4d943498556716d3783 0.0s done
+#5 DONE 0.1s
+
+#6 [builder 2/8] WORKDIR /app
+#6 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 1.64kB done
+#7 DONE 0.0s
+
+#8 [builder 3/8] COPY package*.json ./
+#8 DONE 0.1s
+
+#9 [builder 4/8] COPY prisma ./prisma/
+#9 DONE 0.1s
+
+#10 [builder 5/8] RUN npm install --loglevel verbose
+#10 0.416 npm verbose cli /usr/local/bin/node /usr/local/bin/npm
+#10 0.416 npm info using npm@10.8.2
+#10 0.416 npm info using node@v18.20.8
+#10 0.420 npm verbose title npm install
+#10 0.420 npm verbose argv "install" "--loglevel" "verbose"
+#10 0.421 npm verbose logfile logs-max:10 dir:/root/.npm/_logs/2026-01-13T02_50_19_538Z-
+#10 0.422 npm verbose logfile /root/.npm/_logs/2026-01-13T02_50_19_538Z-debug-0.log
+#10 1.135 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fbull 426ms (cache miss)
+#10 1.168 npm http fetch GET 200 https://registry.npmjs.org/npm 509ms
+#10 1.295 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fcommon 153ms (cache miss)
+#10 1.410 npm http fetch GET 200 https://registry.npmjs.org/class-transformer 100ms (cache miss)
+#10 1.487 npm http fetch GET 200 https://registry.npmjs.org/class-validator 72ms (cache miss)
+#10 1.569 npm http fetch GET 200 https://registry.npmjs.org/reflect-metadata 78ms (cache miss)
+#10 1.652 npm http fetch GET 200 https://registry.npmjs.org/rxjs 81ms (cache miss)
+#10 1.821 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fcore 157ms (cache miss)
+#10 2.483 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fmicroservices 649ms (cache miss)
+#10 2.821 npm http fetch GET 200 https://registry.npmjs.org/@grpc%2fgrpc-js 328ms (cache miss)
+#10 2.943 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fwebsockets 113ms (cache miss)
+#10 3.078 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fplatform-socket.io 121ms (cache miss)
+#10 3.153 npm http fetch GET 200 https://registry.npmjs.org/amqp-connection-manager 64ms (cache miss)
+#10 3.227 npm http fetch GET 200 https://registry.npmjs.org/amqplib 71ms (cache miss)
+#10 3.304 npm http fetch GET 200 https://registry.npmjs.org/cache-manager 75ms (cache miss)
+#10 3.453 npm http fetch GET 200 https://registry.npmjs.org/ioredis 145ms (cache miss)
+#10 3.666 npm http fetch GET 200 https://registry.npmjs.org/kafkajs 205ms (cache miss)
+#10 3.786 npm http fetch GET 200 https://registry.npmjs.org/mqtt 95ms (cache miss)
+#10 4.095 npm http fetch GET 200 https://registry.npmjs.org/nats 295ms (cache miss)
+#10 4.202 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fplatform-express 101ms (cache miss)
+#10 4.288 npm http fetch GET 200 https://registry.npmjs.org/bull 80ms (cache miss)
+#10 4.375 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fconfig 81ms (cache miss)
+#10 4.468 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fjwt 79ms (cache miss)
+#10 4.726 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fpassport 253ms (cache miss)
+#10 4.794 npm http fetch GET 200 https://registry.npmjs.org/passport 63ms (cache miss)
+#10 4.906 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fswagger 100ms (cache miss)
+#10 4.992 npm http fetch GET 200 https://registry.npmjs.org/@fastify%2fstatic 78ms (cache miss)
+#10 5.097 npm http fetch GET 200 https://registry.npmjs.org/@nestjs%2fthrottler 94ms (cache miss)
+#10 5.856 npm http fetch GET 200 https://registry.npmjs.org/@prisma%2fclient 747ms (cache miss)
+#10 6.935 npm http fetch GET 200 https://registry.npmjs.org/prisma 608ms (cache miss)
+#10 7.490 npm http fetch GET 200 https://registry.npmjs.org/date-fns 211ms (cache miss)
+#10 7.592 npm http fetch GET 200 https://registry.npmjs.org/date-fns-tz 75ms (cache miss)
+#10 7.608 npm http fetch GET 200 https://registry.npmjs.org/date-fns 12ms (cache hit)
+#10 7.639 npm verbose stack Error: unable to resolve dependency tree
+#10 7.639 npm verbose stack     at #failPeerConflict (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1360:25)
+#10 7.639 npm verbose stack     at #loadPeerSet (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1326:33)
+#10 7.639 npm verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+#10 7.639 npm verbose stack     at async #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:901:11)
+#10 7.639 npm verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:181:7)
+#10 7.639 npm verbose stack     at async Promise.all (index 1)
+#10 7.639 npm verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:131:5)
+#10 7.639 npm verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:150:5)
+#10 7.639 npm verbose stack     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:207:9)
+#10 7.639 npm verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:74:5)
+#10 7.639 npm error code ERESOLVE
+#10 7.639 npm error ERESOLVE unable to resolve dependency tree
+#10 7.639 npm error
+#10 7.639 npm error While resolving: rahayu-server@0.0.1
+#10 7.639 npm error Found: date-fns@3.6.0
+#10 7.639 npm error node_modules/date-fns
+#10 7.639 npm error   date-fns@"^3.0.6" from the root project
+#10 7.639 npm error
+#10 7.639 npm error Could not resolve dependency:
+#10 7.639 npm error peer date-fns@"2.x" from date-fns-tz@2.0.1
+#10 7.639 npm error node_modules/date-fns-tz
+#10 7.639 npm error   date-fns-tz@"^2.0.0" from the root project
+#10 7.639 npm error
+#10 7.639 npm error Fix the upstream dependency conflict, or retry
+#10 7.639 npm error this command with --force or --legacy-peer-deps
+#10 7.639 npm error to accept an incorrect (and potentially broken) dependency resolution.
+#10 7.639 npm error
+#10 7.639 npm error
+#10 7.639 npm error For a full report see:
+#10 7.639 npm error /root/.npm/_logs/2026-01-13T02_50_19_538Z-eresolve-report.txt
+#10 7.641 npm verbose cwd /app
+#10 7.641 npm verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+#10 7.641 npm verbose node v18.20.8
+#10 7.641 npm verbose npm  v10.8.2
+#10 7.643 npm notice
+#10 7.643 npm notice New major version of npm available! 10.8.2 -> 11.7.0
+#10 7.643 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.7.0
+#10 7.643 npm notice To update run: npm install -g npm@11.7.0
+#10 7.643 npm notice
+#10 7.643 npm verbose exit 1
+#10 7.643 npm verbose code 1
+#10 7.644 npm error A complete log of this run can be found in: /root/.npm/_logs/2026-01-13T02_50_19_538Z-debug-0.log
+#10 ERROR: process "/bin/sh -c npm install --loglevel verbose" did not complete successfully: exit code: 1
+------
+ > [builder 5/8] RUN npm install --loglevel verbose:
+7.641 npm verbose node v18.20.8
+7.641 npm verbose npm  v10.8.2
+7.643 npm notice
+7.643 npm notice New major version of npm available! 10.8.2 -> 11.7.0
+7.643 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.7.0
+7.643 npm notice To update run: npm install -g npm@11.7.0
+7.643 npm notice
+7.643 npm verbose exit 1
+7.643 npm verbose code 1
+7.644 npm error A complete log of this run can be found in: /root/.npm/_logs/2026-01-13T02_50_19_538Z-debug-0.log
+------
+Dockerfile:8
+
+--------------------
+
+   6 |     COPY prisma ./prisma/
+
+   7 |     
+
+   8 | >>> RUN npm install --loglevel verbose
+
+   9 |     
+
+  10 |     COPY . .
+
+--------------------
+
+failed to solve: process "/bin/sh -c npm install --loglevel verbose" did not complete successfully: exit code: 1
+
+
+
+View build details: docker-desktop://dashboard/build/default/default/z8mkbkg0xawdozf6dfx5qgapb
+

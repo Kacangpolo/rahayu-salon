@@ -1,0 +1,24 @@
+; "builtin" config from C:\Program Files\nodejs\node_modules\npm\npmrc
+
+prefix = "C:\\Users\\Atarashi\\AppData\\Roaming\\npm"
+
+; "user" config from C:\Users\Atarashi\.npmrc
+
+; registry = "https://registry.npmjs.org/" ; overridden by project
+
+; "project" config from C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\client\.npmrc
+
+//registry.npmjs.org/:_authToken = (protected)
+fetch-retries = 3
+fetch-retry-maxtimeout = 60000
+fetch-retry-mintimeout = 10000
+registry = "https://registry.npmjs.org/"
+strict-ssl = false
+
+; node bin location = C:\Program Files\nodejs\node.exe
+; node version = v24.12.0
+; npm local prefix = C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\client
+; npm version = 11.6.2
+; cwd = C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\client
+; HOME = C:\Users\Atarashi
+; Run `npm config ls -l` to show all defaults.

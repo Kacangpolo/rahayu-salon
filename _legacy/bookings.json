@@ -1,0 +1,279 @@
+[
+    {
+        "name": "Budi Santoso",
+        "phone": "08123456789",
+        "service": "Manicure",
+        "date": "2024-12-31",
+        "time": "10:00"
+    },
+    {
+        "name": "Budi Santoso",
+        "phone": "08123456789",
+        "service": "Manicure",
+        "date": "2024-12-31",
+        "time": "10:00"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "10:00"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "11:00",
+        "notes": ""
+    },
+    {
+        "name": "Budi Tester",
+        "phone": "08123456789",
+        "service": "Manicure",
+        "date": "2026-01-15",
+        "time": "14:00",
+        "notes": "Request cat kuku warna merah marun."
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "10:00",
+        "notes": ""
+    },
+    {
+        "name": "Budi Tester",
+        "phone": "08123456789",
+        "service": "Manicure",
+        "date": "2026-01-15",
+        "time": "14:00",
+        "notes": "Request cat kuku warna merah marun."
+    },
+    {
+        "name": "Dhamra",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "10:00",
+        "notes": "saya alergi "
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "0855512345",
+        "service": "Nail Art",
+        "date": "2026-01-20",
+        "time": "10:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-20",
+        "time": "10:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-20",
+        "time": "10:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-20",
+        "time": "10:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "10:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "10:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "10:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Admin Tester",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": "Testing admin mode"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": ""
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": "alergi"
+    },
+    {
+        "name": "dharma",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "01:26",
+        "notes": "dsadas"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": "alergi"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": "alergi"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": "alergi"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Manicure",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": "alergi"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "00:00",
+        "notes": "Alergi"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Body Massage",
+        "date": "2026-01-12",
+        "time": "03:44",
+        "notes": "alergi"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Nail Art",
+        "date": "2026-01-12",
+        "time": "04:46",
+        "notes": "Alergi"
+    },
+    {
+        "name": "dharma",
+        "phone": "081246042720",
+        "service": "Body Massage",
+        "date": "2026-01-12",
+        "time": "07:48",
+        "notes": "Alergi"
+    },
+    {
+        "name": "dharma",
+        "phone": "081246042720",
+        "service": "Body Massage",
+        "date": "2026-01-12",
+        "time": "07:48",
+        "notes": "Alergi"
+    },
+    {
+        "name": "dharma",
+        "phone": "081246042720",
+        "service": "Body Massage",
+        "date": "2026-01-12",
+        "time": "07:48",
+        "notes": "Alergi"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Reflexology",
+        "date": "2026-01-12",
+        "time": "06:14",
+        "notes": "Alergi"
+    },
+    {
+        "name": "Dharma",
+        "phone": "081246042720",
+        "service": "Reflexology",
+        "date": "2026-01-12",
+        "time": "06:14",
+        "notes": "Alergi"
+    },
+    {
+        "name": "dhamra",
+        "phone": "081246042720",
+        "service": "Pedicure",
+        "date": "2026-01-12",
+        "time": "15:24",
+        "notes": "dsadasd"
+    },
+    {
+        "name": "Tes Antigravity",
+        "phone": "08123456789",
+        "service": "Manicure",
+        "date": "1970-01-02",
+        "time": "14:00",
+        "notes": "Testing WhatsApp link"
+    },
+    {
+        "name": "Tes Antigravity",
+        "phone": "08123456789",
+        "service": "Manicure",
+        "date": "1970-01-02",
+        "time": "14:00",
+        "notes": "Testing WhatsApp link"
+    }
+]

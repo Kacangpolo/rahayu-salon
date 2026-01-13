@@ -1,0 +1,51 @@
+yarn install v1.22.22
+verbose 0.1865787 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\scratch\\rahayusalon\\client\\.npmrc".
+verbose 0.1870593 Checking for configuration file "C:\\Users\\Atarashi\\.npmrc".
+verbose 0.1874088 Checking for configuration file "C:\\Program Files\\nodejs\\etc\\npmrc".
+verbose 0.1875976 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\scratch\\rahayusalon\\client\\.npmrc".
+verbose 0.1877954 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\scratch\\rahayusalon\\.npmrc".
+verbose 0.1879423 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\scratch\\.npmrc".
+verbose 0.1880932 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\.npmrc".
+verbose 0.1884103 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\.npmrc".
+verbose 0.1886004 Checking for configuration file "C:\\Users\\Atarashi\\.npmrc".
+verbose 0.1887603 Checking for configuration file "C:\\Users\\.npmrc".
+verbose 0.189349 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\scratch\\rahayusalon\\client\\.yarnrc".
+verbose 0.1895164 Checking for configuration file "C:\\Users\\Atarashi\\.yarnrc".
+verbose 0.1896869 Found configuration file "C:\\Users\\Atarashi\\.yarnrc".
+verbose 0.1900568 Checking for configuration file "C:\\Program Files\\nodejs\\etc\\yarnrc".
+verbose 0.1901705 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\scratch\\rahayusalon\\client\\.yarnrc".
+verbose 0.1902749 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\scratch\\rahayusalon\\.yarnrc".
+verbose 0.1904225 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\scratch\\.yarnrc".
+verbose 0.1905635 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\antigravity\\.yarnrc".
+verbose 0.190664 Checking for configuration file "C:\\Users\\Atarashi\\.gemini\\.yarnrc".
+verbose 0.1907626 Checking for configuration file "C:\\Users\\Atarashi\\.yarnrc".
+verbose 0.1909132 Found configuration file "C:\\Users\\Atarashi\\.yarnrc".
+verbose 0.1912484 Checking for configuration file "C:\\Users\\.yarnrc".
+verbose 0.196455 current time: 2026-01-13T03:06:49.148Z
+info No lockfile found.
+[1/4] Resolving packages...
+verbose 0.2283129 Performing "GET" request to "https://registry.yarnpkg.com/@fullcalendar%2fapi".
+verbose 0.4168123 Request "https://registry.yarnpkg.com/@fullcalendar%2fapi" finished with status code 404.
+verbose 0.4242573 Error: https://registry.yarnpkg.com/@fullcalendar%2fapi: Not found
+    at params.callback [as _callback] (C:\Users\Atarashi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66680:18)
+    at self.callback (C:\Users\Atarashi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141410:22)
+    at Request.emit (node:events:508:28)
+    at Request.<anonymous> (C:\Users\Atarashi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:142382:10)
+    at Request.emit (node:events:508:28)
+    at IncomingMessage.<anonymous> (C:\Users\Atarashi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:142304:12)
+    at Object.onceWrapper (node:events:622:28)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+error Error: https://registry.yarnpkg.com/@fullcalendar%2fapi: Not found
+    at params.callback [as _callback] (C:\Users\Atarashi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66680:18)
+    at self.callback (C:\Users\Atarashi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141410:22)
+    at Request.emit (node:events:508:28)
+    at Request.<anonymous> (C:\Users\Atarashi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:142382:10)
+    at Request.emit (node:events:508:28)
+    at IncomingMessage.<anonymous> (C:\Users\Atarashi\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:142304:12)
+    at Object.onceWrapper (node:events:622:28)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.

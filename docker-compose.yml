@@ -1,0 +1,104 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: rahayu_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: rahayusalon
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U admin -d rahayusalon" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    container_name: rahayu_redis
+    restart: always
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build:
+      context: ./server
+      target: api
+    container_name: rahayu_api
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      DATABASE_URL: "postgresql://admin:password123@postgres:5432/rahayusalon?schema=public"
+      REDIS_HOST: "redis"
+      REDIS_PORT: "6379"
+      # Credentials loaded from env_file in real prod, inline here for demo
+      GOOGLE_CLIENT_ID: "${GOOGLE_CLIENT_ID}"
+      GOOGLE_CLIENT_SECRET: "${GOOGLE_CLIENT_SECRET}"
+      GOOGLE_REFRESH_TOKEN: "${GOOGLE_REFRESH_TOKEN}"
+      WA_API_URL: "${WA_API_URL}"
+      WA_API_KEY: "${WA_API_KEY}"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: ./server
+      target: worker
+    container_name: rahayu_worker
+    restart: always
+    environment:
+      DATABASE_URL: "postgresql://admin:password123@postgres:5432/rahayusalon?schema=public"
+      # Credentials
+      GOOGLE_CLIENT_ID: "${GOOGLE_CLIENT_ID}"
+      GOOGLE_CLIENT_SECRET: "${GOOGLE_CLIENT_SECRET}"
+      GOOGLE_REFRESH_TOKEN: "${GOOGLE_REFRESH_TOKEN}"
+      WA_API_URL: "${WA_API_URL}"
+      WA_API_KEY: "${WA_API_KEY}"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  migrator:
+    build:
+      context: ./server
+      target: api
+    container_name: rahayu_migrator
+    environment:
+      DATABASE_URL: "postgresql://admin:password123@postgres:5432/rahayusalon?schema=public"
+    command: sh -c "npx prisma migrate deploy && npm run prisma:seed"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  client:
+    build:
+      context: ./client
+      target: runner
+      args:
+        NEXT_PUBLIC_API_URL: "http://localhost:5000"
+    container_name: rahayu_client
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: "http://localhost:5000"
+    depends_on:
+      - api
+
+volumes:
+  postgres_data:

@@ -1,0 +1,93 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
+
+model Service {
+  id          String    @id
+  name        String
+  durationMin Int
+  price       Decimal
+  bookings    Booking[]
+}
+
+model Resource {
+  id       String    @id @default(uuid())
+  name     String    // e.g., "Staff A", "Chair 1"
+  bookings Booking[]
+}
+
+model Booking {
+  id            String        @id @default(uuid())
+  customerName  String
+  customerEmail String
+  customerPhone String
+  serviceId     String
+  service       Service       @relation(fields: [serviceId], references: [id])
+  resourceId    String
+  resource      Resource      @relation(fields: [resourceId], references: [id])
+  startAt       DateTime      @db.Timestamptz // UTC
+  endAt         DateTime      @db.Timestamptz // UTC
+  durationMin   Int
+  notes         String?
+  status        BookingStatus @default(PENDING)
+  
+  googleEventId String?       // Store for Idempotency/Updates
+  waMessageId   String?
+  waStatus      String?
+
+  // Relations
+  outbox        NotificationOutbox[]
+  
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model NotificationOutbox {
+  id          String    @id @default(uuid())
+  bookingId   String
+  booking     Booking   @relation(fields: [bookingId], references: [id])
+  channel     Channel
+  payload     Json
+  status      OutboxStatus @default(PENDING)
+  
+  retryCount  Int       @default(0)
+  maxRetries  Int       @default(5)
+  nextAttemptAt DateTime? 
+  lastError   String?
+
+  createdAt   DateTime  @default(now())
+  processedAt DateTime?
+  errorLog    String?
+
+  @@unique([bookingId, channel]) // Strict Idempotency at DB level
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}
+
+enum Channel {
+  WHATSAPP
+  GCAL
+}
+
+enum OutboxStatus {
+  PENDING
+  PROCESSING
+  SENT
+  FAILED
+}

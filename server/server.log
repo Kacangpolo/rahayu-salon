@@ -1,0 +1,777 @@
+
+> rahayu-server@0.0.1 start:dev
+> nest start --watch
+
+[2J[3J[H[[90m10:05:54 AM[0m] Starting compilation in watch mode...
+
+[96msrc/app.module.ts[0m:[93m4[0m:[93m2[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Module'. Did you mean 'module'?
+
+[7m4[0m @Module({
+[7m [0m [91m ~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m521[0m:[93m13[0m
+    [7m521[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[96msrc/app.module.ts[0m:[93m6[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ConfigModule'.
+
+[7m6[0m         ConfigModule.forRoot({
+[7m [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m13[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m13[0m         PrismaModule,
+[7m  [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m14[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BookingsModule'.
+
+[7m14[0m         BookingsModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServicesModule'.
+
+[7m15[0m         ServicesModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m16[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'QueueModule'.
+
+[7m16[0m         QueueModule,
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AuthModule'.
+
+[7m17[0m         AuthModule,
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m10:06:04 AM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m10:18:35 AM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m4[0m:[93m2[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Module'. Did you mean 'module'?
+
+[7m4[0m @Module({
+[7m [0m [91m ~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m521[0m:[93m13[0m
+    [7m521[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[96msrc/app.module.ts[0m:[93m6[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ConfigModule'.
+
+[7m6[0m         ConfigModule.forRoot({
+[7m [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m13[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m13[0m         PrismaModule,
+[7m  [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m14[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BookingsModule'.
+
+[7m14[0m         BookingsModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServicesModule'.
+
+[7m15[0m         ServicesModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m16[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'QueueModule'.
+
+[7m16[0m         QueueModule,
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AuthModule'.
+
+[7m17[0m         AuthModule,
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m10:18:35 AM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:18 AM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m4[0m:[93m2[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Module'. Did you mean 'module'?
+
+[7m4[0m @Module({
+[7m [0m [91m ~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m521[0m:[93m13[0m
+    [7m521[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[96msrc/app.module.ts[0m:[93m6[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ConfigModule'.
+
+[7m6[0m         ConfigModule.forRoot({
+[7m [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m13[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m13[0m         PrismaModule,
+[7m  [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m14[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BookingsModule'.
+
+[7m14[0m         BookingsModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServicesModule'.
+
+[7m15[0m         ServicesModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m16[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'QueueModule'.
+
+[7m16[0m         QueueModule,
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AuthModule'.
+
+[7m17[0m         AuthModule,
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m11:31:19 AM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:20 AM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m4[0m:[93m2[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Module'. Did you mean 'module'?
+
+[7m4[0m @Module({
+[7m [0m [91m ~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m521[0m:[93m13[0m
+    [7m521[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[96msrc/app.module.ts[0m:[93m6[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ConfigModule'.
+
+[7m6[0m         ConfigModule.forRoot({
+[7m [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m13[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m13[0m         PrismaModule,
+[7m  [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m14[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BookingsModule'.
+
+[7m14[0m         BookingsModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServicesModule'.
+
+[7m15[0m         ServicesModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m16[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'QueueModule'.
+
+[7m16[0m         QueueModule,
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AuthModule'.
+
+[7m17[0m         AuthModule,
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m11:31:20 AM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m1:02:53 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m4[0m:[93m2[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Module'. Did you mean 'module'?
+
+[7m4[0m @Module({
+[7m [0m [91m ~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m521[0m:[93m13[0m
+    [7m521[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[96msrc/app.module.ts[0m:[93m6[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ConfigModule'.
+
+[7m6[0m         ConfigModule.forRoot({
+[7m [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m13[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m13[0m         PrismaModule,
+[7m  [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m14[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BookingsModule'.
+
+[7m14[0m         BookingsModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServicesModule'.
+
+[7m15[0m         ServicesModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m16[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'QueueModule'.
+
+[7m16[0m         QueueModule,
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AuthModule'.
+
+[7m17[0m         AuthModule,
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m1:02:54 PM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m1:02:54 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m4[0m:[93m2[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Module'. Did you mean 'module'?
+
+[7m4[0m @Module({
+[7m [0m [91m ~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m521[0m:[93m13[0m
+    [7m521[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[96msrc/app.module.ts[0m:[93m6[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ConfigModule'.
+
+[7m6[0m         ConfigModule.forRoot({
+[7m [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m13[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m13[0m         PrismaModule,
+[7m  [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m14[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BookingsModule'.
+
+[7m14[0m         BookingsModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServicesModule'.
+
+[7m15[0m         ServicesModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m16[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'QueueModule'.
+
+[7m16[0m         QueueModule,
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AuthModule'.
+
+[7m17[0m         AuthModule,
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m1:02:54 PM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m1:02:55 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m4[0m:[93m2[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Module'. Did you mean 'module'?
+
+[7m4[0m @Module({
+[7m [0m [91m ~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m521[0m:[93m13[0m
+    [7m521[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[96msrc/app.module.ts[0m:[93m6[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ConfigModule'.
+
+[7m6[0m         ConfigModule.forRoot({
+[7m [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m13[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m13[0m         PrismaModule,
+[7m  [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m14[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BookingsModule'.
+
+[7m14[0m         BookingsModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServicesModule'.
+
+[7m15[0m         ServicesModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m16[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'QueueModule'.
+
+[7m16[0m         QueueModule,
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AuthModule'.
+
+[7m17[0m         AuthModule,
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m1:02:55 PM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m1:02:56 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m4[0m:[93m2[0m - [91merror[0m[90m TS2552: [0mCannot find name 'Module'. Did you mean 'module'?
+
+[7m4[0m @Module({
+[7m [0m [91m ~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m521[0m:[93m13[0m
+    [7m521[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[96msrc/app.module.ts[0m:[93m6[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ConfigModule'.
+
+[7m6[0m         ConfigModule.forRoot({
+[7m [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m13[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m13[0m         PrismaModule,
+[7m  [0m [91m        ~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m14[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'BookingsModule'.
+
+[7m14[0m         BookingsModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m15[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ServicesModule'.
+
+[7m15[0m         ServicesModule,
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m16[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'QueueModule'.
+
+[7m16[0m         QueueModule,
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m17[0m:[93m9[0m - [91merror[0m[90m TS2304: [0mCannot find name 'AuthModule'.
+
+[7m17[0m         AuthModule,
+[7m  [0m [91m        ~~~~~~~~~~[0m
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m1:02:57 PM[0m] Found 11 errors. Watching for file changes.
+
+[2J[3J[H[[90m1:27:47 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/bookings/bookings.module.ts[0m:[93m6[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PrismaModule'.
+
+[7m6[0m     imports: [PrismaModule],
+[7m [0m [91m              ~~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m1:27:47 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m1:28:39 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m1:28:39 PM[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m1:30:12 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/queue/notifications.processor.ts[0m:[93m35[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'waMessageId' does not exist on type '{ service: { id: string; name: string; durationMin: number; price: Decimal; }; } & { id: string; durationMin: number; createdAt: Date; status: BookingStatus; customerName: string; ... 8 more ...; updatedAt: Date; }'.
+
+[7m35[0m         if (!booking.waMessageId) {
+[7m  [0m [91m                     ~~~~~~~~~~~[0m
+
+[96msrc/queue/notifications.processor.ts[0m:[93m43[0m:[93m21[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'waMessageId' does not exist in type '(Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput)'.
+
+[7m43[0m                     waMessageId: mockWaId,
+[7m  [0m [91m                    ~~~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m5075[0m:[93m5[0m
+    [7m5075[0m     data: XOR<BookingUpdateInput, BookingUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: BookingSelect<DefaultArgs>; include?: BookingInclude<DefaultArgs>; data: (Without<BookingUpdateInput, BookingUncheckedUpdateInput> & BookingUncheckedUpdateInput) | (Without<...> & BookingUpdateInput); where: BookingWhereUniqueInput; }'
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m1:30:12 PM[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m1:30:13 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/whatsapp/whatsapp.service.ts[0m:[93m3[0m:[93m19[0m - [91merror[0m[90m TS2307: [0mCannot find module 'axios' or its corresponding type declarations.
+
+[7m3[0m import axios from 'axios';
+[7m [0m [91m                  ~~~~~~~[0m
+
+[[90m1:30:13 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m1:30:55 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m1:30:55 PM[0m] Found 0 errors. Watching for file changes.
+
+(node:43188) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2J[3J[H[[90m1:30:57 PM[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[[90m1:30:57 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +41ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mQueueModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +5ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServicesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +38ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServicesController {/services}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34288  - [39m01/13/2026, 1:30:57 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +34ms[39m
+Server running on port 5000
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +24ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mQueueModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +5ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServicesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +33ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServicesController {/services}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26744  - [39m01/13/2026, 1:31:00 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +25ms[39m
+Server running on port 5000
+[2J[3J[H[[90m1:38:43 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m1:38:43 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 49176  - [39m01/13/2026, 1:38:45 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 49176  - [39m01/13/2026, 1:38:45 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 49176  - [39m01/13/2026, 1:38:45 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 49176  - [39m01/13/2026, 1:38:45 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 49176  - [39m01/13/2026, 1:38:45 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[31m[Nest] 49176  - [39m01/13/2026, 1:38:45 PM [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the BookingsService (PrismaService, ?). Please make sure that the argument "BullQueue_notifications" at index [1] is available in the BookingsModule context.
+
+Potential solutions:
+- Is BookingsModule a valid NestJS module?
+- If "BullQueue_notifications" is a provider, is it part of the current BookingsModule?
+- If "BullQueue_notifications" is exported from a separate @Module, is that module imported within BookingsModule?
+  @Module({
+    imports: [ /* the Module containing "BullQueue_notifications" */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the BookingsService (PrismaService, ?). Please make sure that the argument "BullQueue_notifications" at index [1] is available in the BookingsModule context.
+
+Potential solutions:
+- Is BookingsModule a valid NestJS module?
+- If "BullQueue_notifications" is a provider, is it part of the current BookingsModule?
+- If "BullQueue_notifications" is exported from a separate @Module, is that module imported within BookingsModule?
+  @Module({
+    imports: [ /* the Module containing "BullQueue_notifications" */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\server\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at async Injector.resolveComponentInstance (C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\server\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at async resolveParam (C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\server\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 1)
+    at async Injector.resolveConstructorParams (C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\server\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at async Injector.loadInstance (C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\server\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at async Injector.loadProvider (C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\server\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at async C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\server\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at async InstanceLoader.createInstancesOfProviders (C:\Users\Atarashi\.gemini\antigravity\scratch\rahayusalon\server\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+[2J[3J[H[[90m1:42:19 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m1:42:19 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +21ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mQueueModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServicesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBullModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +32ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServicesController {/services}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/services/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 47456  - [39m01/13/2026, 1:42:21 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +27ms[39m
+Server running on port 5000
+Processing booking c2b1605b-4f8d-4b1f-8a76-7ca1bac378dd...
+[Google Calendar] Creating event for kt.dharmakusuma@gmail.com
+[WhatsApp] Sending confirmation to 081246042720
+Job finished.
