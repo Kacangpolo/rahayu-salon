@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import api from '@/lib/api';
+import Logo from '@/components/Logo';
 import Testimonials from '@/components/Testimonials';
 import Gallery from '@/components/Gallery';
 import FAQ from '@/components/FAQ';
@@ -115,7 +116,12 @@ export default function Home() {
                     <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80')] bg-cover bg-center animate-slow-zoom"></div>
                 </div>
 
+
+
                 <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
+                    <div className="mb-8 flex justify-center">
+                        <Logo className="w-32 h-auto drop-shadow-2xl animate-fade-in-up" />
+                    </div>
                     <span className="block text-rose-200 text-sm md:text-base font-medium tracking-[0.3em] mb-6 uppercase animate-fade-in-up">Experience True Luxury</span>
                     <h1 className="text-6xl md:text-8xl font-serif mb-8 tracking-wide leading-tight animate-fade-in-up delay-100">Rahayu Salon <br /> <span className="italic text-rose-100 font-light">& Spa</span></h1>
                     <p className="text-lg md:text-2xl font-light text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
