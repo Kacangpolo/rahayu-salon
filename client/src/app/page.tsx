@@ -307,6 +307,8 @@ export default function Home() {
             {/* Map */}
             <Map />
 
+
+
             {/* Footer */}
             <footer className="bg-gray-900 text-gray-400 py-16">
                 <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
