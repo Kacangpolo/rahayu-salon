@@ -1,10 +1,22 @@
 
 export default function Gallery() {
     const images = [
-        "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=600&h=800",
-        "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=600&h=800",
-        "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&q=80&w=600&h=800",
-        "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=600&h=800"
+        {
+            src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=600&h=800",
+            title: "Nail Art & Manicure"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1588667500550-c8f3ad67946c?auto=format&fit=crop&q=80&w=600&h=800",
+            title: "Eyelash Extensions"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=600&h=800",
+            title: "Premium Hair Styling"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=600&h=800",
+            title: "Relaxing Spa"
+        }
     ];
 
     return (
@@ -19,16 +31,16 @@ export default function Gallery() {
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {images.map((img, i) => (
+                    {images.map((item, i) => (
                         <div key={i} className={`relative group overflow-hidden rounded-xl ${i % 2 === 0 ? 'mt-0' : 'mt-8'}`}>
                             <img
-                                src={img}
-                                alt={`Gallery ${i}`}
+                                src={item.src}
+                                alt={item.title}
                                 className="w-full h-[400px] object-cover transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className="text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <h3 className="text-xl font-serif">Rahayu Experience</h3>
+                                    <h3 className="text-xl font-serif">{item.title}</h3>
                                     <span className="text-rose-300 text-sm">Lihat Detail</span>
                                 </div>
                             </div>
