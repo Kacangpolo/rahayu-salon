@@ -1,18 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
-
-declare global {
-  interface Window {
-    google: any;
-    googleTranslateElementInit: any;
-  }
-}
-
-'use client';
-
 import { useEffect, useState } from 'react';
-import { FaGlobe, FaHeart } from 'react-icons/fa';
+import { FaSyncAlt, FaHeart } from 'react-icons/fa';
 
 declare global {
   interface Window {
@@ -77,8 +66,8 @@ export default function GoogleTranslate() {
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
               className={`flex items-center gap-3 w-full px-4 py-2 rounded-xl text-sm font-medium transition-colors ${currentLang === lang.code
-                  ? 'bg-rose-50 text-rose-600 dark:bg-rose-900/20 dark:text-rose-400'
-                  : 'hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200'
+                ? 'bg-rose-50 text-rose-600 dark:bg-rose-900/20 dark:text-rose-400'
+                : 'hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200'
                 }`}
             >
               <span className="text-lg">{lang.flag}</span>
@@ -94,7 +83,7 @@ export default function GoogleTranslate() {
         className="group relative bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg border-2 border-rose-200 dark:border-gray-700 hover:border-rose-400 dark:hover:border-rose-500 transition-all duration-300 hover:scale-110 active:scale-95"
       >
         <div className="relative">
-          <FaGlobe className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-rose-500 dark:group-hover:text-rose-400 transition-colors" />
+          <FaSyncAlt className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-rose-500 dark:group-hover:text-rose-400 transition-colors" />
           <div className="absolute -top-2 -right-2 transform rotate-12">
             <FaHeart className="w-4 h-4 text-rose-500 animate-pulse" />
           </div>
