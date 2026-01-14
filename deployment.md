@@ -65,7 +65,7 @@ Sekarang kita perlu memberi tahu Backend alamat Frontend yang baru.
 
 ---
 
-## Selesai! 🎉
+## Selesai!
 Website Anda sekarang sudah online!
 -   **Publik**: `https://rahayu-salon.vercel.app`
 -   **Admin**: `https://rahayu-salon.vercel.app/admin`
