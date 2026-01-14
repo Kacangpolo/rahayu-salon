@@ -5,9 +5,9 @@
 
 A high-end, full-stack reservation system designed for a luxury salon in Bali. This project demonstrates a "Luxurious Zen" aesthetic combined with robust backend architecture (Transactional Outbox pattern for reliability).
 
-## ✨ Key Features
+## Key Features
 
-### 🎨 Premium Frontend (Client)
+###  Premium Frontend (Client)
 - **Tech**: Next.js 14, TailwindCSS, Framer Motion.
 - **Design**: "Luxurious Zen" theme with Glassmorphism, Outfit typography, and Gold/Cream palette.
 - **User Experience**:
@@ -15,7 +15,7 @@ A high-end, full-stack reservation system designed for a luxury salon in Bali. T
     - Interactive Admin Dashboard with FullCalendar integration.
     - Responsive Landing Page (Hero, Services, Testimonials, Map).
 
-### ⚙️ Robust Backend (Server)
+### Robust Backend (Server)
 - **Tech**: NestJS, Prisma ORM, BullMQ (Redis).
 - **Architecture**:
     - **Transactional Outbox Pattern**: Ensures 100% reliable notification delivery even if third-party APIs fail initially.
@@ -24,7 +24,7 @@ A high-end, full-stack reservation system designed for a luxury salon in Bali. T
     - **WhatsApp & Email (Mocked)**: Automated confirmation messages.
     - **Google Calendar (Mocked)**: Syncs appointments to admin calendars.
 
-## 🚀 How to Run
+##  How to Run
 
 ### Prerequisites
 - Docker & Docker Compose
@@ -63,13 +63,13 @@ A high-end, full-stack reservation system designed for a luxury salon in Bali. T
     - Admin: `http://localhost:3000/admin` (Login bypassed for demo)
     - API Docs: `http://localhost:5000/api`
 
-## 📸 Screenshots
+##  Screenshots
 
 | Landing Page | Admin Dashboard |
 |:---:|:---:|
 | ![Landing Page](/c:/Users/Atarashi/.gemini/antigravity/brain/75bfbba2-a759-4c19-982f-f5333d48740b/project_landing_page_1768287259363.png) | ![Admin Dashboard](/c:/Users/Atarashi/.gemini/antigravity/brain/75bfbba2-a759-4c19-982f-f5333d48740b/project_admin_dashboard_1768287302843.png) |
 
-## 👨‍💻 Developer Notes
+##  Developer Notes
 
 This project was built to showcase advanced full-stack capabilities:
 - **Resilience**: The backend is designed to handle failures gracefully.
