@@ -1,4 +1,4 @@
-# Panduan Deployment: Membuat Website Rahayu Salon Publik 🌍
+# Panduan Deployment: Membuat Website Rahayu Salon Publik 
 
 Panduan ini akan membantu Anda menayangkan website **Rahayu Salon** agar bisa diakses oleh siapa saja di internet.
 
