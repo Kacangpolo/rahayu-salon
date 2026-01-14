@@ -76,4 +76,4 @@ This project was built to showcase advanced full-stack capabilities:
 - **Aesthetics**: The frontend moves beyond basic utility to providing an emotional user experience.
 
 ---
-*Created by [Your Name]*
+*Created by Dharma*
