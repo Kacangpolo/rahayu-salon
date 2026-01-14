@@ -23,7 +23,7 @@ Pastikan kode Anda sudah ada di **GitHub** (sesuai langkah Portofolio sebelumnya
     ```env
     PORT=5000
     # Nanti diisi setelah Frontend di-deploy
-    CLIENT_URL=https://rahayu-salon.vercel.app 
+    CLIENT_URL=https://rahayusalon.vercel.app 
     
     # Biarkan kosong dulu, Railway akan buatkan otomatis:
     # DATABASE_URL
